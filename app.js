@@ -1,7 +1,8 @@
 require('./xyz')
 // require('./sum')
 // const calculateSum=require('./sum')
-const obj=require('./sum.js')
+// const obj=require('./sum.js')
+const {x,calculateSum}=require('./sum.js')
 // you cannot access variables and methods functions of one module into another by the used of require
 //modules protects their variables and functions from leaking
 // globalThis introduced in ES2020 now called the global variable
@@ -18,6 +19,8 @@ const obj=require('./sum.js')
 var name="Amandeep";
 var a=10;
 var b=20;
-obj.calculateSum(a,b);
-console.log(obj.x)
+// obj.calculateSum(a,b);
+calculateSum(a,b)
+console.log(x)
+// console.log(obj.x)
  console.log(globalThis===global)
