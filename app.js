@@ -1,4 +1,8 @@
-require('./xyz')
+// import { test_xyz } from "./xyz.js";
+const { calculateSum, calculateMultiply } = require("./calculate/index.js");
+const data = require("./data.json");
+// require("./xyz");
+// const obj = require("./sum.js");
 // require('./sum')
 // const calculateSum=require('./sum')
 // const obj=require('./sum.js')
@@ -14,6 +18,16 @@ const {x,calculateSum}=require('./sum.js')
 
 // console.log(globalThis);//global object
 
+// var name = "Amandeep";
+var a = 10;
+var b = 20;
+// obj.calculateSum(a, b);
+// console.log(obj.x);
+// console.log(globalThis === global);
+calculateSum(a, b);
+calculateMultiply(a, b);
+// console.log(JSON.stringify(data));
+// console.log(data);
 
 
 var name="Amandeep";
