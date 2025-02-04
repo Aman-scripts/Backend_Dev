@@ -30,8 +30,12 @@ calculateMultiply(a, b);
 // console.log(data);
 
 
+// const wrapper=[
+//     '(function(exports,require,module,__filename,__dirname) {'\n'}
+// ]
 
 
+//Continue regarless of Errors
 
 
 
@@ -46,3 +50,5 @@ console.log(data
 
 )
 console.log(globalThis===global)
+console.log(__filename)
+console.log(__dirname)
